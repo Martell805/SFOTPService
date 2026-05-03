@@ -1,3 +1,3 @@
-package ru.vovandiya.sfotpservice.enums;
+package ru.vovandiya.sfotpservice.model;
 
 public enum Role { USER, ADMIN }

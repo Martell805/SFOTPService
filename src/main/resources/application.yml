@@ -1,1 +1,26 @@
-spring.application.name=SFOTPService
+spring:
+  application:
+    name: SFOTPService
+  datasource:
+    url: jdbc:postgresql://localhost:5432/otp
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  secret: "really-really-secret-text-for-jwt"
+  expiration: 86400000
+
+telegram:
+  bot-token: "fake-token"
+  chat-id: "123456789"
+  api-url: "http://localhost:8089"
+
+otp:
+  expiry-check-interval-ms: 60000
